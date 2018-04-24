@@ -1,0 +1,116 @@
+Practica 2 - Programas en lenguaje ensamblador para linux: factorial.s
+
+Mosqueda Silva Luis Daniel      3MV8
+
+
+
+------------------------------factorial.s--------------------------------
+.section .data
+.section .text
+.globl _start
+.globl factorial
+
+_start:
+pushl $4
+
+call factorial
+addl $4, %esp
+
+movl %eax, %ebx
+
+movl $1, %eax
+int $0x80
+
+.type factorial,@function
+
+factorial:
+pushl %ebp
+
+movl %esp, %ebp
+movl 8(%ebp), %eax
+cmpl $1, %eax
+
+je end_factorial
+decl %eax
+
+pushl %eax
+
+call factorial
+movl 8(%ebp), %ebx
+imull %ebx, %eax
+
+end_factorial:
+movl %ebp, %esp
+popl %ebp
+
+ret
+
+
+--------------instrucciones de compilado y ejecucion----------------
+
+       as --32 factorial.s -o factorial.o
+       ld -m elf_i386 factorial.o -o factorial
+       ./factorial
+       echo $?
+
+-------------------------------Resultado-----------------------------
+
+Al compilar y correr nuestro programa nos damos cuenta que la instru-
+ccion "echo" nos regresa el valor de 24 por lo que comprobamos que el 
+programa funciona correctamente ya que el factorial del numero 4 es 
+24, como ejercicio adicional se probo hacer el factorial del numero 5
+y se genero un nuevo programa llamado factorialcinco:
+
+
+---------------------------factorialcinco.s-----------------------------
+.section .data
+.section .text
+.globl _start
+.globl factorial
+
+_start:
+pushl $5
+
+call factorial
+addl $5, %esp
+
+movl %eax, %ebx
+
+movl $1, %eax
+int $0x80
+
+.type factorial,@function
+
+factorial:
+pushl %ebp
+
+movl %esp, %ebp
+movl 8(%ebp), %eax
+cmpl $1, %eax
+
+je end_factorial
+decl %eax
+
+pushl %eax
+
+call factorial
+movl 8(%ebp), %ebx
+imull %ebx, %eax
+
+end_factorial:
+movl %ebp, %esp
+popl %ebp
+
+ret
+
+
+--------------instrucciones de compilado y ejecucion----------------
+
+       as --32 factorialcinco.s -o factorialcinco.o
+       ld -m elf_i386 factorialcinco.o -o factorialcinco
+       ./factorialcinco
+       echo $?
+
+-------------------------------Resultado-----------------------------
+120 lo que comprueba que es correcto nuestro programa ya que el facto-
+rial de 5 es 120.
