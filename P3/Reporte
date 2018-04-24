@@ -1,0 +1,50 @@
+
+Practica 3 - Programas en lenguaje ensamblador para linux:maximum.s
+
+Mosqueda Silva Luis Daniel      3MV8
+
+
+
+----------------------------maximum.s------------------------------
+.section .data
+data_items:
+.long 3,67,34,222,45,75,45,34,44,33,22,11,66,0
+
+.section .text
+
+.globl _start
+_start:
+movl $0, %edi
+movl data_items(,%edi,4), %eax
+movl %eax, %ebx
+
+start_loop:
+cmpl $0, %eax
+je loop_exit
+incl %edi
+movl data_items(,%edi,4),%eax
+cmpl %ebx, %eax
+jle start_loop
+
+movl %eax, %ebx
+jmp start_loop
+
+loop_exit:
+
+movl $1, %eax
+int $0x80
+
+--------------instrucciones de compilado y ejecucion----------------
+
+       as --32 maximum.s -o maximum.o
+       ld -m elf_i386 maximum.o -o maximum
+       ./maximum
+       echo $?
+
+-------------------------------Resultado-----------------------------
+
+Al compilar y correr nuestro programa nos damos cuenta que la instru-
+ccion "echo" nos regresa el valos mas alto de la lista que anterior-
+mente habiamos esctrito, por lo cual comprobamos que nuestro programa
+maximum.s funciona correctamente y nos regresa el valor del valos mas
+alto de la lista.
