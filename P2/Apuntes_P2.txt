@@ -1,0 +1,51 @@
+    1  apt/get update
+    2  apt /get update
+    3  apt -get update
+    4  apt-get update
+    5  apt -get update
+    6  apt-get dist-upgrade kali-linux-aññ
+    7  apt-get dist-upgrade kali-linux-all
+    8  apt /get update
+    9  apt -get update
+   10  apt-get update
+   11  apt -get update
+   12  apt-get dist-upgrade kali-linux-all
+   13  apt -get update
+   14  setings
+   15  apt-get upgrade
+   16  apt-get dist-upgrade kali-linux-all
+   17  close
+   18  reboot
+   19  vim
+   20  vim a1.s
+   21  sudo apt-get install gimp
+   22  sudo apt-get update gimp
+   23  apt /get update
+   24  apt -get update
+   25  apt-get update
+   26  sudo apt-get update
+   27  vim
+   28  sudo apt-install vim
+   29  sudo apt install vim
+   30  vim
+   31  as --32 exit.s -o exit.o
+   32  exit.s
+   33  vim exit.s
+   34  as --32 exit.s -o exit.o
+   35  ld-m elf_i386 exit.o -o exit
+   36  ld -m elf_i386 exit.o -o exit
+   37  as --32 exit.s -o exit.o
+   38  ld -m elf_i386 exit.o -o exit
+   39  ./exit
+   40  echo $?
+   41  history> Apuntes_P2.txt
+   42  as --32 exit.s -o exit.o
+   43  ld -m elf_i386 exit.o -o exit
+   44  ./exit
+   45  echo $?
+   46  vim exit.s
+   47  as --32 exit.s -o exit.o
+   48  ld -m elf_i386 exit.o -o exit
+   49  ./exit
+   50  echo $?
+   51  history> Apuntes_P2.txt

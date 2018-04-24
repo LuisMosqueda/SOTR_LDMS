@@ -1,0 +1,31 @@
+Practica 2 - Programas en lenguaje ensamblador para linux: exit.s
+
+Mosqueda Silva Luis Daniel      3MV8
+
+
+
+------------------------------exit.s--------------------------------
+.section .data.
+
+.section .text.
+.globl _start
+_start:
+movl $1, %eax
+
+movl $0, %ebx
+
+int $0x80
+
+--------------instrucciones de compilado y ejecucion----------------
+
+       as --32 exit.s -o exit.o
+       ld -m elf_i386 exit.o -o exit
+       ./exit
+       echo $?
+
+-------------------------------Resultado-----------------------------
+
+Al compilar y correr nuestro programa nos damos cuenta que la instru-
+ccion "echo" nos regresa el valor de 0 por lo que comprobamos que el 
+programa funciona correctamente y es un programa para dar salida en 
+cualquier instancia.
