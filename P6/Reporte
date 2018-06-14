@@ -1,0 +1,36 @@
+Practica 5 - Task_Scheduler(_00,_01,_02)
+
+Mosqueda Silva Luis Daniel      3MV8
+
+
+
+
+--------------instrucciones de compilado y ejecucion----------------
+
+         make
+         ./os_test
+         history> Apuntes_P6.txt
+
+         make
+         ./os_test
+         history> Apuntes_P6_01.txt
+            
+         make
+         ./os_test
+         history> Apuntes_P6_02.txt
+
+-------------------------------Resultado-----------------------------
+
+Al compilar y correr nuestro programa nos damos cuenta que funciona correctamente
+y nos da como resultado un contador que va aumentando de uno en uno, por lo que 
+vemos que los archivos que fueron generados son correctos.
+
+Como observacion, al momento de querer correr el programa un mensaje de desplegaba
+diciendo que el acceso no era permitido, por lo que se tuvo que borrar los archivos
+con extension .o y volver a generarlos con la instruccion make. }una vez que se 
+compilo nuevamente los archivos, si se pudo correr el progama y verificar su
+funcionamiento.
+ 
+
+
+

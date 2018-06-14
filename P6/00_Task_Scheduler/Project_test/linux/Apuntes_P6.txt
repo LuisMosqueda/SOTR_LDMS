@@ -1,0 +1,127 @@
+    1  apt/get update
+    2  apt /get update
+    3  apt -get update
+    4  apt-get update
+    5  apt -get update
+    6  apt-get dist-upgrade kali-linux-aññ
+    7  apt-get dist-upgrade kali-linux-all
+    8  apt /get update
+    9  apt -get update
+   10  apt-get update
+   11  apt -get update
+   12  apt-get dist-upgrade kali-linux-all
+   13  apt -get update
+   14  setings
+   15  apt-get upgrade
+   16  apt-get dist-upgrade kali-linux-all
+   17  close
+   18  reboot
+   19  vim
+   20  vim a1.s
+   21  sudo apt-get install gimp
+   22  sudo apt-get update gimp
+   23  apt /get update
+   24  apt -get update
+   25  apt-get update
+   26  sudo apt-get update
+   27  vim
+   28  sudo apt-install vim
+   29  sudo apt install vim
+   30  vim
+   31  as --32 exit.s -o exit.o
+   32  exit.s
+   33  vim exit.s
+   34  as --32 exit.s -o exit.o
+   35  ld-m elf_i386 exit.o -o exit
+   36  ld -m elf_i386 exit.o -o exit
+   37  as --32 exit.s -o exit.o
+   38  ld -m elf_i386 exit.o -o exit
+   39  ./exit
+   40  echo $?
+   41  history> Apuntes_P2.txt
+   42  as --32 exit.s -o exit.o
+   43  ld -m elf_i386 exit.o -o exit
+   44  ./exit
+   45  echo $?
+   46  vim exit.s
+   47  as --32 exit.s -o exit.o
+   48  ld -m elf_i386 exit.o -o exit
+   49  ./exit
+   50  echo $?
+   51  history> Apuntes_P2.txt
+   52  vim
+   53  as --32 a1.s -o a1.o
+   54  objdump -D a1.o
+   55  vim
+   56  as --32 a2.s -o a2.o
+   57  objdump -D a2.o
+   58  vim
+   59  ld a1.o a2.o -o a.out -T test.lds
+   60  vim test.lds
+   61  ld a1.o a2.o -o a.out -T test.lds
+   62  ld -m elf_i386 a1.o a2.o -o a.out -T test.lds
+   63  objdump a.out
+   64  objdump -D a.out
+   65  history> Apuntes_P1.txt
+   66  objcopy -j abc -j def -O binary a.out a.bin
+   67  od -t x1 a.bin
+   68  objcopy -j def -j abc -O binary a.out a.bin
+   69  od -t x1 a.bin
+   70  ld -m elf_i386 a1.o a2.o -o a.out -T test.lds
+   71  objcopy -j abc -j def -O binary a.out a.bin
+   72  od -t x1 a.bin
+   73  history> Apuntes_P1.txt
+   74  vim factorial
+   75  ass --32 factorial.s -o factorial.o
+   76  as --32 factorial.s -o factorial.o
+   77  vim fctorial.s
+   78  vim factorial.s
+   79  as --32 factorial.s -o factorial.o
+   80  ld -m elf_i386 factorial.o -o factorial./factorial
+   81  vim factorial.s
+   82  as --32 factorial.s -o factorial.o
+   83  ld -m elf_i386 factorial.o -o factorial./factorial
+   84  history> Apuntes_P4.txt
+   85  ld -m elf_i386 factorial.o -o factorial
+   86  echo $?
+   87  as --32 factorial.s -o factorial.o
+   88  ld -m elf_i386 factorial.o -o factorial
+   89  echo $?
+   90  as --32 factorial.s -o factorial.o
+   91  ld -m elf_i386 factorial.o -o factorial
+   92  ./factorial
+   93  echo $?
+   94  as --32 factorial.s -o factorial.o
+   95  ld -m elf_i386 factorial.o -o factorial
+   96  ./factorial
+   97  echo $?
+   98  history> Apuntes_P4.txt
+   99  vim factorial.s
+  100  as --32 factorial.s -o factorial.o
+  101  ld -m elf_i386 factorial.o -o factorial
+  102  ./factorial
+  103  echo $?
+  104  vim factorial.s
+  105  as --32 factorialcinco.s -o factorialcinco.o
+  106  vim factorialcinco.s
+  107  vim factorial.s
+  108  as --32 factorialcinco.s -o factorialcinco.o
+  109  ld -m elf_i386 factorialcinco.o -o factorialcinco
+  110  ./factorialcinco
+  111  echo $?
+  112  vim factorialcinco.s
+  113  history> Apuntes_P4.txt
+  114  vim
+  115  :q
+  116  Vim
+  117  vim
+  118  make
+  119  ./testprintf
+  120  history> Apuntes_P5.txt
+  121  make
+  122  ./os_test
+  123  make
+  124  ./os_test
+  125  make
+  126  ./os_test
+  127  history> Apuntes_P6.txt
